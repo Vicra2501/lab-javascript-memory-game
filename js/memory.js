@@ -1,15 +1,22 @@
+
+
 class MemoryGame {
   constructor(cards) {
-    this.cards = cards;
-    // add the rest of the class properties here
+    this.cards = [];
+    this.pickedCards = [];
+    this.pairsClicked = pairsClicked;
+    this.pairsGuessed = pairsGuessed
   }
 
   shuffleCards() {
-    // ... write your code here
+    for (let i = 0; i < this.cards.length; i++) {
+      this.cards[i] = Math.floor(Math.random(0.5, this.cards.length));
+      return this.shuffleCards.push(this.cards[i])
+    }
   }
 
   checkIfPair(card1, card2) {
-    // ... write your code here
+    
   }
 
   checkIfFinished() {
